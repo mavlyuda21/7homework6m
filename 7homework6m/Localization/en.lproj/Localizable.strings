@@ -1,0 +1,18 @@
+/* 
+  Localizable.strings
+  7homework6m
+
+  Created by mavluda on 7/7/23.
+  
+*/
+"Main" = "Main";
+"Language" = "Language";
+"English" = "English";
+"Russian" = "Russian";
+"IPHistory" = "IP Address History";
+"FetchIPAddress" = "Fetch IP Address";
+"DeleteAll" = "Delete All";
+"ClearAll" = "Clear All";
+"SureToDelete" = "Are you sure you want to delete all IP addresses?";
+"Cancel" = "Cancel";
+"Delete" = "Delete";
