@@ -9,7 +9,6 @@ import Foundation
 
 protocol APIManagerProtocol{
     func fetchIPAddress(completion: @escaping (Result<String, Error>) -> Void)
-    
 }
 
 class APIManager: APIManagerProtocol {

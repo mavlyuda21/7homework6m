@@ -15,6 +15,7 @@ protocol MainViewModelDelegate: AnyObject {
 }
 
 protocol MainViewModelProtocol {
+    var delegate: MainViewModelDelegate?{get set}
     var ipAddresses: [SavedIPAddress] {get}
     func fetchIPAddress()
     func loadIPAddresses()
@@ -23,7 +24,7 @@ protocol MainViewModelProtocol {
     func deleteAllIPAddresses()
 }
 
-class MainViewModel {
+class MainViewModel: MainViewModelProtocol {
     weak var delegate: MainViewModelDelegate?
     private let apiManager: APIManagerProtocol
     private let coreDataManager: CoreDataManagerProtocol

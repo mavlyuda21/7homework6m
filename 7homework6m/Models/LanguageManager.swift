@@ -45,7 +45,6 @@ class LanguageManager: LanguageManagerProtocol {
             window?.rootViewController = nil
             window?.rootViewController = rootViewController
         }
-    
 }
 
 extension Notification.Name {

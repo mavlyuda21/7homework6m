@@ -37,9 +37,9 @@ class MainViewController: UIViewController {
         return tableView
     }()
     
-    private let viewModel: MainViewModel
+    private var viewModel: MainViewModelProtocol
     
-    init(viewModel: MainViewModel = MainViewModel(apiManager: APIManager.shared, coreDataManager: CoreDataManager.shared)) {
+    init(viewModel: MainViewModelProtocol = MainViewModel(apiManager: APIManager.shared, coreDataManager: CoreDataManager.shared)) {
         self.viewModel = viewModel
         super.init(nibName: nil, bundle: nil)
         self.viewModel.delegate = self

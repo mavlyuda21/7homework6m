@@ -21,12 +21,12 @@ class LanguageSelectionViewModel: LanguageSelectionViewModelProtocol {
     weak var delegate: LanguageSelectionViewModelDelegate?
     
     private let localizationManager: LocalizationManagerProtocol
-        let languageManager: LanguageManagerProtocol
-        
-        init(localizationManager: LocalizationManagerProtocol, languageManager: LanguageManagerProtocol) {
-            self.localizationManager = localizationManager
-            self.languageManager = languageManager
-        }
+    let languageManager: LanguageManagerProtocol
+    
+    init(localizationManager: LocalizationManagerProtocol, languageManager: LanguageManagerProtocol) {
+        self.localizationManager = localizationManager
+        self.languageManager = languageManager
+    }
     
     func selectLanguage(_ languageCode: String) {
         LanguageManager.shared.currentLanguage = languageCode
